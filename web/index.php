@@ -7,7 +7,7 @@
 
 
   // Escribir en archivo
-  $myfile = fopen("log/log-webhooks.txt", "w") or die("Imposible abrir el archivo.");
+  $myfile = fopen("log/log-webhooks.json", "w") or die("Imposible abrir el archivo.");
 
 
   fwrite($myfile, $input);
