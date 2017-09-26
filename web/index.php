@@ -7,11 +7,10 @@
   // Escribir en archivo
   $myfile = fopen("log/log-webhooks.json", "w") or die("Imposible abrir el archivo.");
 
-  fwrite($myfile, $input);
 
   //Respuesta a Culqi
   $array = array(
-    "mensaje_respues" => "Objeto token recibido"
+    "mensaje_response" => "Objeto token recibido"
   );
 
   echo json_encode($array);
