@@ -9,6 +9,7 @@
   fwrite($myfile, $input);
 
   //Respuesta a Culqi
+  http_response_code(200);
   $array = array(
     "mensaje_response" => "Webhook de Culqi recibido"
   );
