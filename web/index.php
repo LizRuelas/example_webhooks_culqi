@@ -10,7 +10,5 @@
 
   fwrite($myfile, $input);
 
-  // Respuesta a Culqi, todo bien.
-  http_response_code(200); // PHP 5.4 o superior
-  ;
+
 ?>
