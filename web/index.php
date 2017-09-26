@@ -9,14 +9,8 @@
   $myfile = fopen("log/log-webhooks.json", "w") or die("Imposible abrir el archivo.");
 
   fwrite($myfile, $input);
-  fclose($myfile);
-
-  $array = array(
-    "mensaje_respuesta" => "Hola wh token"
-  );
-
 
   // Respuesta a Culqi, todo bien.
   http_response_code(200); // PHP 5.4 o superior
-  echo json_encode($array);
+  ;
 ?>
