@@ -1,4 +1,3 @@
-  Hola Webhooks
 <?php
   // Recuperar el cuerpo de la solicitud y analizarlo como JSON
   $input = file_get_contents("php://input");
@@ -10,5 +9,10 @@
 
   fwrite($myfile, $input);
 
+  //Respuesta a Culqi
+  $array = array(
+    "mensaje_respues" => "Objeto token recibido"
+  );
 
+  echo json_encode($array);
 ?>
