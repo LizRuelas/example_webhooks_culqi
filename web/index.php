@@ -1,3 +1,4 @@
+  Hola Webhooks
 <?php
   // Recuperar el cuerpo de la solicitud y analizarlo como JSON
   $input = file_get_contents("php://input");
@@ -10,9 +11,12 @@
   fwrite($myfile, $input);
   fclose($myfile);
 
+  $array = array(
+    "mensaje_respuesta" => "Hola wh token"
+  );
+
 
   // Respuesta a Culqi, todo bien.
   http_response_code(200); // PHP 5.4 o superior
-  fwrite("hola mundo");
-	//responder a culqi con algun mensaje (URGENTE-BRAYAN)
+  echo json_encode($array);
 ?>
