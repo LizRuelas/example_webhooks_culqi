@@ -10,7 +10,7 @@
 
   //Respuesta a Culqi
   $array = array(
-    "mensaje_response" => "Objeto token recibido"
+    "mensaje_response" => "Webhook de Culqi recibido"
   );
   echo json_encode($array);
 ?>
